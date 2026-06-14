@@ -1,0 +1,4 @@
+Django>=4.0
+requests>=2.30.0
+psycopg2-binary>=2.9.0 # Для PostgreSQL. Если используете SQLite, не нужно.
+django-bootstrap5>=22.0 # Для быстрой стилизации кнопок и форм

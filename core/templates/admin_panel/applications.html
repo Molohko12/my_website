@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Заявки на рассмотрении{% endblock %}
+
+{% block content %}
+<h2>Заявки</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th><th>ФИО</th><th>Возраст</th><th>Отдел</th><th>Статус</th><th>Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for app in applications %}
+        <tr>
+            <td>#{{ app.id }}</td>
+            <td>{{ app.full_name }}</td>
+            <td>{{ app.age }}</td>
+            <td>{{ app.get_department_display }}</td>
+            <td>{{ app.
